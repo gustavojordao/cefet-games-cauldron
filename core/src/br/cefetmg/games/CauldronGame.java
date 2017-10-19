@@ -115,6 +115,11 @@ public class CauldronGame extends ApplicationAdapter {
         // ...
         // ...
         // ...
+        bolhas = ((ParticleEffect) assets.get("bolhas.pfx")).copy();
+        bolhas.init();
+        bolhas.start();
+        bolhas.translate(new Vector3(0, 1.0f, 0));
+        sistemaParticulas.add(bolhas);
         
         // começa a música
         musica.setLooping(true);
